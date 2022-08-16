@@ -34,10 +34,14 @@ module.exports = {
     // used if allowCustomScopes is true
     customScope: '请输入修改范围(可选):',
     subject: '请简要描述提交(必填):\n',
+    // body: '长说明，使用"|"换行(可选)：\n',
+    // breaking: '非兼容性说明 (可选):\n',
+    // footer: '关联关闭的issue，例如：#31, #34(可选):\n',
     confirmCommit: '确定提交说明?(yes/no)'
   },
   allowCustomScopes: true,
   allowBreakingChanges: ['特性', '修复'],
+  skipQuestions: ['body', 'footer'],
   // limit subject length
   subjectLimit: 72
 }
