@@ -12,16 +12,23 @@
     "lint": "eslint --fix --ext .ts,.tsx,.vue src",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "test": "vitest",
-    "prepare": "husky install" 
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "Simple",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.0.3",
     "@iconify-json/ic": "^1.1.4",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/test-utils": "2.0.2",
+    "commitizen": "^4.2.4",
+    "commitlint": "^17.0.3",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.9.1",
     "happy-dom": "6.0.4",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
@@ -44,6 +51,11 @@
     "typescript": "^4.6.2",
     "unocss": "^0.45.6",
     "vue": "^3.2.37"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   },
   "eslint": {
     "extends": [
