@@ -53,7 +53,7 @@
     "vue": "^3.2.37"
   },
   "lint-staged": {
-    "*.{vue,js,ts}": [
+    "*.{vue,tsx,js,ts}": [
       "prettier --write",
       "eslint --fix"
     ]
