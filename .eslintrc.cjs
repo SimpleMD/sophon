@@ -4,19 +4,24 @@ module.exports = {
     browser: true,
     es2020: true,
     node: true,
-    jest: true,
+    jest: true
   },
   globals: {
     ga: true,
     chrome: true,
-    __DEV__: true,
+    __DEV__: true
   },
   // 解析 .vue 文件
   parser: 'vue-eslint-parser',
-  extends: ['plugin:json/recommended', 'plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
-  plugins: ['vue','@typescript-eslint'],
+  extends: [
+    'plugin:json/recommended',
+    'plugin:vue/vue3-essential',
+    'eslint:recommended',
+    '@vue/prettier'
+  ],
+  plugins: ['vue', '@typescript-eslint'],
   parserOptions: {
-    parser: '@typescript-eslint/parser', // 解析 .ts 文件
+    parser: '@typescript-eslint/parser' // 解析 .ts 文件
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -25,7 +30,7 @@ module.exports = {
     'no-useless-concat': 1, // 禁止不必要的字符串字面量或模板字面量的连接
     'no-useless-escape': 0, // 禁止不必要的转义字符
     'consistent-return': 0, // 要求 return 语句要么总是指定返回的值，要么不指定
-    'camelcase': 0, // 强制使用骆驼拼写法命名约定
+    camelcase: 0, // 强制使用骆驼拼写法命名约定
     'no-redeclare': 1, // 禁止多次声明同一变量
     'array-callback-return': 1, // 强制数组方法的回调函数中有 return 语句,Array有几种过滤，映射和折叠的方法。如果我们忘记return在这些回调中写入语句，那可能是一个错误。
     'default-case': 1, // 要求 switch 语句中有 default 分支
@@ -43,5 +48,5 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-empty-function': 0,
     'vue/multi-word-component-names': 0
-  },
-};
+  }
+}
