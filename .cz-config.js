@@ -40,7 +40,7 @@ module.exports = {
     confirmCommit: '确定提交说明?(yes/no)'
   },
   allowCustomScopes: true,
-  allowBreakingChanges: ['特性', '修复'],
+  // allowBreakingChanges: ['特性', '修复'],
   skipQuestions: ['body', 'footer'],
   // limit subject length
   subjectLimit: 72

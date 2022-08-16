@@ -52,16 +52,16 @@
     "unocss": "^0.45.6",
     "vue": "^3.2.37"
   },
+  "lint-staged": {
+    "*.{vue,js,ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
     }
-  },
-  "eslint": {
-    "extends": [
-      "plugin:vue/vue3-recommended",
-      "prettier"
-    ]
   },
   "pnpm": {
     "peerDependencyRules": {
